@@ -7,7 +7,6 @@ public class perulangan {
         System.out.print("Masukkan NIM anda: ");
         long nim = input.nextLong();
 
-        //ambil 2 digit terakhir NIM
         int n = (int)(nim % 100);
 
         if (n<10){
