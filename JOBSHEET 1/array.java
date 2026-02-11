@@ -38,22 +38,22 @@ public class array {
                 continue;
             }
 
-            if (nilaiAngka[i] >= 80) {
+            if (nilaiAngka[i] > 80) {
                 nilaiHuruf[i] = "A";
                 bobotNilai[i] = 4.0;
-            } else if (nilaiAngka[i] >= 73) {
+            } else if (nilaiAngka[i] > 73) {
                 nilaiHuruf[i] = "B+";
                 bobotNilai[i] = 3.5;
-            } else if (nilaiAngka[i] >= 65) {
+            } else if (nilaiAngka[i] > 65) {
                 nilaiHuruf[i] = "B";
                 bobotNilai[i] = 3.0;
-            } else if (nilaiAngka[i] >= 60) {
+            } else if (nilaiAngka[i] > 60) {
                 nilaiHuruf[i] = "C+";
                 bobotNilai[i] = 2.5;
-            } else if (nilaiAngka[i] >= 50) {
+            } else if (nilaiAngka[i] > 50) {
                 nilaiHuruf[i] = "C";
                 bobotNilai[i] = 2.0;
-            } else if (nilaiAngka[i] >= 39) {
+            } else if (nilaiAngka[i] > 39) {
                 nilaiHuruf[i] = "D";
                 bobotNilai[i] = 1.0;
             } else {
