@@ -19,7 +19,7 @@ public class pemilihan {
         System.out.print("Masukkan nilai UAS: ");
         int nilaiUAS = input.nextInt();
 
-        // ✅ Validasi input harus 0 - 100
+
         if (nilaiTugas < 0 || nilaiTugas > 100 ||
             nilaiKuis < 0 || nilaiKuis > 100 ||
             nilaiUTS < 0 || nilaiUTS > 100 ||
