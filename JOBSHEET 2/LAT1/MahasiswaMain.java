@@ -14,5 +14,9 @@ class MahasiswaMain {
         System.out.println("\nSetelah perubahan: \n");
         mhs1.tampilkanInformasi();
 
+        Mahasiswa04 mhs2 = new Mahasiswa04("Annisa Nabila", "2141720160", "TI 2L", 3.25);
+        mhs2.updateIPK(3.30);
+        mhs2.tampilkanInformasi();
+
     }
 }
