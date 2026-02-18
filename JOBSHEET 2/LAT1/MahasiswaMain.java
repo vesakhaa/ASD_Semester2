@@ -1,5 +1,4 @@
 class MahasiswaMain {
-
     public static void main(String[] args) {
         Mahasiswa04 mhs1 = new Mahasiswa04();
         mhs1.nama = "Muhhammad Ali Farhan";
@@ -14,8 +13,15 @@ class MahasiswaMain {
         System.out.println("\nSetelah perubahan: \n");
         mhs1.tampilkanInformasi();
 
+        System.out.println("\n\n");
+
+
         Mahasiswa04 mhs2 = new Mahasiswa04("Annisa Nabila", "2141720160", "TI 2L", 3.25);
+        mhs2.tampilkanInformasi();
         mhs2.updateIPK(3.30);
+
+        System.out.println("\nSetelah perubahan: \n");
+
         mhs2.tampilkanInformasi();
 
     }
