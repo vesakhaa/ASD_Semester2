@@ -22,13 +22,19 @@ import java.util.Scanner;
             System.out.println("-----------------------------------");
         }
 
-        for (mahasiswa04 arrayOfMahasiswa1 : arrayOfMahasiswa) {
-            System.out.println("NIM:    " + arrayOfMahasiswa1.nim);
-            System.out.println("Nama:   " + arrayOfMahasiswa1.nama);
-            System.out.println("Kelas:  " + arrayOfMahasiswa1.kelas);
-            System.out.println("IPK:    " + arrayOfMahasiswa1.ipk);
-            System.out.println("-----------------------------------");
+        // for (mahasiswa04 arrayOfMahasiswa1 : arrayOfMahasiswa) {
+        //     System.out.println("NIM:    " + arrayOfMahasiswa1.nim);
+        //     System.out.println("Nama:   " + arrayOfMahasiswa1.nama);
+        //     System.out.println("Kelas:  " + arrayOfMahasiswa1.kelas);
+        //     System.out.println("IPK:    " + arrayOfMahasiswa1.ipk);
+        //     System.out.println("-----------------------------------");
+        // }
+
+
+        for (int i=0; i <arrayOfMahasiswa.length; i++){
+            arrayOfMahasiswa[i].tampilkanInfo();
         }
+
         // arrayOfMahasiswa[0] = new mahasiswa04();
         // arrayOfMahasiswa[0].nim = "244107060033";
         // arrayOfMahasiswa[0].nama = "AGNES TITANIA KINANTI";
