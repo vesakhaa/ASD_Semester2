@@ -24,5 +24,10 @@ class MahasiswaMain {
 
         mhs2.tampilkanInformasi();
 
+        System.out.println("\n\n");
+
+        Mahasiswa04 Vesakhagotama04 = new Mahasiswa04("Ananda Vesakhagotama", "254107060025", "SIb iC", 3.89);
+        Vesakhagotama04.tampilkanInformasi();
+
     }
 }

@@ -13,6 +13,8 @@ public class mataKuliahMain04 {
         System.out.println("\nSetelah Perubahan\n");
         matKul1.tampilkanInformasi();
 
+        System.out.println("\n\n");
+
 
         mataKuliah04 matKul2 = new mataKuliah04("PASD", "Praktikum Algoritma dan Struktur Data", 3, 6);
         matKul2.tampilkanInformasi();
