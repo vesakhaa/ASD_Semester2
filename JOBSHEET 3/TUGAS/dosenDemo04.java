@@ -2,7 +2,12 @@ import java.util.Scanner;
 public class dosenDemo04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        dosen04[] arrayOfDosen = new dosen04[3];
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan jumlah dosen: ");
+        int indeks = input.nextInt();
+        dosen04[] arrayOfDosen = new dosen04[indeks];
+
         String dummy;
 
         for (int i=0; i<arrayOfDosen.length;i++){
@@ -10,13 +15,13 @@ public class dosenDemo04 {
             System.out.println("Masukkan data dosen ke-"+(i+1));
 
             System.out.print("Masukkan Kode: ");
-            arrayOfDosen[i].kode = input.nextLine();
+            arrayOfDosen[i].kode = sc.nextLine();
 
             System.out.print("Masukkan Nama: ");
-            arrayOfDosen[i].nama = input.nextLine();
+            arrayOfDosen[i].nama = sc.nextLine();
 
             System.out.print("Masukkan Jenis Kelamin (Pria/Wanita): ");
-            dummy = input.nextLine();
+            dummy = sc.nextLine();
             if (dummy.equalsIgnoreCase("Pria")) {
                 arrayOfDosen[i].jenisKelamin = true;
             } else if (dummy.equalsIgnoreCase("Wanita")) {
@@ -56,5 +61,6 @@ public class dosenDemo04 {
         // }
 
         input.close();
+        sc.close();
     }
 }
