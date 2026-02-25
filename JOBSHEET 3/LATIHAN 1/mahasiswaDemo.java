@@ -32,7 +32,7 @@ import java.util.Scanner;
 
 
         for (int i=0; i <arrayOfMahasiswa.length; i++){
-            arrayOfMahasiswa[i].tampilkanInfo();
+            arrayOfMahasiswa[i].cetakInfo();
         }
 
         // arrayOfMahasiswa[0] = new mahasiswa04();

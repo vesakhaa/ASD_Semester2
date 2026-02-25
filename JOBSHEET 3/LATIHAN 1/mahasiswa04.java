@@ -4,7 +4,7 @@ public class mahasiswa04 {
     public String kelas;
     public float ipk;
 
-    void tampilkanInfo(){
+    void cetakInfo(){
         System.out.println("NIM:    " + nim);
         System.out.println("Nama:   " + nama);
         System.out.println("Kelas:  " + kelas);
