@@ -50,16 +50,6 @@ public class dosenDemo04 {
         System.out.println("\n");
         dataDosen.infoDosenPalingMuda(arrayOfDosen);
 
-        // int i = 1;
-        // for (dosen04 arrayOfDosen1 : arrayOfDosen) {
-        //     System.out.println("Data Dosen ke- " + i++);
-        //     System.out.println("Kode:   " + arrayOfDosen1.kode);
-        //     System.out.println("Nama:   " + arrayOfDosen1.nama);
-        //     System.out.println("Jenis Kelamin: " + (arrayOfDosen1.jenisKelamin ? "Laki-laki" : "Perempuan"));
-        //     System.out.println("Usia:   " + arrayOfDosen1.usia);
-        //     System.out.println("-----------------------------------");
-        // }
-
         input.close();
         sc.close();
     }

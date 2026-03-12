@@ -7,6 +7,8 @@ public class mataKuliah04 {
     public Scanner sc = new Scanner(System.in);
     public String dummy;
 
+    public mataKuliah04(){}
+
     public mataKuliah04(String kode, String nama, int sks, int jumlahJam){
         this.kode = kode;
         this.nama = nama;
