@@ -2,12 +2,12 @@ import java.util.Scanner;
 public class mainSum04 {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.println("Masukkan jumlah elemen: ");
+        System.out.print("Masukkan jumlah elemen: ");
         int elemen  = input.nextInt();
 
         sum04 sm = new sum04(elemen);
         for(int i=0; i<elemen; i++){
-            System.out.println("Masukkan keuntungan ke-" + (i+1) + ": " );
+            System.out.print("Masukkan keuntungan ke-" + (i+1) + ": " );
             sm.keuntungan[i] = input.nextDouble();
         }
 
