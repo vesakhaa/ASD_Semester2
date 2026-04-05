@@ -1,14 +1,17 @@
 public class dataDosen04 {
-    dosen04[] dataDosen = new dosen04[10];
+    dosen04[] dataDosen; 
     int idx = 0;
+
+    public dataDosen04(int kapasitas) {
+        dataDosen = new dosen04[kapasitas];
+    }
 
     public void tambah(dosen04 dsn) {
         if (idx < dataDosen.length) {
             dataDosen[idx] = dsn;
             idx++;
-            System.out.println("Data dosen berhasil ditambahkan!");
         } else {
-            System.out.println("Kapasitas data dosen sudah penuh (Maksimal 10)!");
+            System.out.println("[PERINGATAN] Kapasitas penyimpanan dosen sudah penuh!");
         }
     }
 
@@ -17,8 +20,10 @@ public class dataDosen04 {
             System.out.println("Data dosen masih kosong.");
         } else {
             for (int i = 0; i < idx; i++) {
-                System.out.println("--- Dosen ke-" + (i + 1) + " ---");
-                dataDosen[i].tampil();
+                if (dataDosen[i] != null) {
+                    System.out.println("--- Dosen ke-" + (i + 1) + " ---");
+                    dataDosen[i].tampil();
+                }
             }
         }
     }
@@ -26,16 +31,18 @@ public class dataDosen04 {
     public void SortingASC() {
         for (int i = 0; i < idx - 1; i++) {
             for (int j = 1; j < idx - i; j++) {
-                if (dataDosen[j].usia < dataDosen[j - 1].usia) {
-                    dosen04 temp = dataDosen[j];
-                    dataDosen[j] = dataDosen[j - 1];
-                    dataDosen[j - 1] = temp;
+                if (dataDosen[j] != null && dataDosen[j-1] != null) {
+                    if (dataDosen[j].usia < dataDosen[j - 1].usia) {
+                        dosen04 temp = dataDosen[j];
+                        dataDosen[j] = dataDosen[j - 1];
+                        dataDosen[j - 1] = temp;
+                    }
                 }
             }
         }
         System.out.println("\n[INFO] Berhasil diurutkan ASC (Termuda-Tertua) dengan Bubble Sort.");
     }
- 
+
     public void sortingDSC() {
         insertionSort(); 
     }
@@ -44,7 +51,7 @@ public class dataDosen04 {
         for (int i = 1; i < idx; i++) {
             dosen04 temp = dataDosen[i];
             int j = i - 1;
-            while (j >= 0 && dataDosen[j].usia < temp.usia) {
+            while (j >= 0 && dataDosen[j] != null && dataDosen[j].usia < temp.usia) {
                 dataDosen[j + 1] = dataDosen[j];
                 j--;
             }
