@@ -1,8 +1,14 @@
 
 public class mahasiswaBerprestasi {
 
-    mahasiswa04[] listMhs = new mahasiswa04[5];
+    mahasiswa04[] listMhs;
     int idx;
+
+    // Constructor agar ukuran array bisa dinamis
+    mahasiswaBerprestasi(int kapasitas) {
+        listMhs = new mahasiswa04[kapasitas];
+        idx = 0;
+    }
 
     void tambah(mahasiswa04 m) {
         if (idx < listMhs.length) {
@@ -29,6 +35,20 @@ public class mahasiswaBerprestasi {
                     listMhs[j - 1] = temp;
                 }
             }
+        }
+    }
+
+    void selectionSort() {
+        for (int i=0; i<listMhs.length-1; i++) {
+            int idxMin = i;
+            for (int j=i+1; j<listMhs.length; j++) {
+                if (listMhs[j].ipk<listMhs[idxMin].ipk) {
+                    idxMin = j;
+                }
+            }
+            mahasiswa04 tmp = listMhs[idxMin];
+            listMhs[idxMin] = listMhs[i];
+            listMhs[i] = tmp;
         }
     }
 }
