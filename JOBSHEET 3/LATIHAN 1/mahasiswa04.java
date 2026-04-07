@@ -12,4 +12,9 @@ public class mahasiswa04 {
         System.out.println("-----------------------------------");
     }
 
+    public void tampilInformasi() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'tampilInformasi'");
+    }
+
 }
