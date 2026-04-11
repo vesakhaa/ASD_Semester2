@@ -4,7 +4,6 @@ public class mahasiswaBerprestasi {
     mahasiswa04[] listMhs;
     int idx;
 
-    // Constructor agar ukuran array bisa dinamis
     mahasiswaBerprestasi(int kapasitas) {
         listMhs = new mahasiswa04[kapasitas];
         idx = 0;
