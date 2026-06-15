@@ -1,6 +1,6 @@
 public class Buku04 {
     public String kodeBuku, judul;
-    public int tahunTerbit; // Atribut sesuai spesifikasi [cite: 36, 37, 38]
+    public int tahunTerbit;
 
     public Buku04(String kode, String judul, int tahun) {
         this.kodeBuku = kode;
@@ -8,7 +8,7 @@ public class Buku04 {
         this.tahunTerbit = tahun;
     }
 
-    public void tampilBuku04() {
+    public void tampilBuku() {
         System.out.println("Kode: " + kodeBuku + " | Judul: " + judul + " | Tahun: " + tahunTerbit);
     }
 }
